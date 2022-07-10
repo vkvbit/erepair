@@ -35,50 +35,19 @@
 		  color: white;
 		}
 
-		.topnav-centered a {
-		  float: none;
-		  position: absolute;
-		  top: 50%;
-		  left: 50%;
-		  transform: translate(-50%, -50%);
-			border-radius: 50%;
-		}
-
 		.topnav-right {
 		  float: right;
 			padding-top: 30px;
 			padding-right: 40px;
 		}
 
-		/* Responsive navigation menu (for mobile devices) */
-		@media screen and (max-width: 600px) {
-		  .topnav a, .topnav-right {
-		    float: none;
-		    display: block;
-		  }
-
-		  .topnav-centered a {
-		    position: relative;
-		    top: 0;
-		    left: 0;
-		    transform: none;
-		  }
-		}
-
 		.footer {
 		   position: fixed;
-		   left: 0;
 		   bottom: 0;
 		   width: 100%;
 		   background-color: #333;
 		   color: white;
-			 padding: 30px;
-		}
-
-		#parent {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
+		   padding: 10px;
 		}
 
     #card-parent {
@@ -112,17 +81,45 @@
       color: black;
     }
 
+    /* Responsive navigation menu (for mobile devices) */
+		@media screen and (max-width: 600px) {
+
+			.topnav a {
+				font-size: 15px;
+				padding: 5px;
+				margin-top: 5px;
+			}
+		  
+			.topnav a, .topnav-left {
+			    float: left;
+			    display: grid;
+			 }	
+
+			.topnav a, .topnav-right {
+			    float: right;
+			    display: grid;
+			}
+
+		 	.topnav-left {
+			  float: left;
+			  padding: 5px;
+			}
+
+			.topnav-right {
+			  float: right;
+				padding: 10px;
+			}
+		}
+
 	</style>
 </head>
 <body>
 
 	<div class="topnav">
 
-	  <div class="topnav-centered">
-	    <a href="./../login.html" class="active"><img src="./../cdn/log.jpg" height="50px" width="auto"></a>
-	  </div>
-
-	  <a href="./../index.html"><img src="./../cdn/logo.png" height="100px" width="auto" style="border: thin solid green; border-radius: 10%;"></a>
+		<div class="topnav-left">
+		  <a href="./../index.html"><img src="./../cdn/logo.png" height="100px" width="auto" style="border: thin solid green; border-radius: 10%;"></a>
+		</div>
 
 	  <div class="topnav-right">
 	    <a href="./../service.html" style="border: thin solid white;">Services</a>
@@ -176,11 +173,7 @@
   <div style="height:200px"></div>
 
 	<div class="footer">
-		<div id="parent">
-			<div class="child">Phone Number:<br>Email:<br></div>
-			<div class="child" style="text-align:center;">&#169; E-Repair<br>2022</div>
-			<div class="child" style="padding-right:40px;">Dr. AITH,<br>Awadhpuri, Kanpur Nagar,<br>U.P. India - 208024</div>
-		</div>
+		<div style="width: 100%; text-align: center;">2022 &#169; E-Repair </div>
 	</div>
 
 </body>
