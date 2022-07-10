@@ -57,12 +57,12 @@
 		}
 
 		.shop-cards {
-      margin: auto;
-      width: 60%;
-      border: 3px solid #73AD21;
-      padding: 2rem;
-      margin-top:1rem;
-    }
+	      margin: auto;
+	      width: 60%;
+	      border: 3px solid #73AD21;
+	      padding: 2rem;
+	      margin-top:1rem;
+	    }
 
 		.shop-child {
 			border: thin solid blue;
@@ -104,6 +104,12 @@
 			color: black;
 		}
 
+		#problem {
+			height:60px;
+			width: 300px;
+			line-height: 20px;
+		}
+
 		/* Responsive navigation menu (for mobile devices) */
 		@media screen and (max-width: 600px) {
 
@@ -131,6 +137,28 @@
 			.topnav-right {
 			  float: right;
 				padding: 10px;
+			}
+
+			#card-parent {
+				flex-direction: column;
+			}
+
+			.shop-child {
+				width: 90%;
+				margin: 0rem;
+				margin-bottom: 1rem;
+			}
+
+			.shop-cards {
+				width: 80%;
+				padding: 1rem;
+				margin-bottom: 50px;
+			}
+
+			#problem {
+				height:80px;
+				width: 70%;
+				line-height: 15px;
 			}
 		}
 
